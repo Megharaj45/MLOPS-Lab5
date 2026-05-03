@@ -10,3 +10,12 @@ stages:
     metrics:
       - evaluations/validation_report.json:
           cache: false
+
+  features:
+    cmd: python -m src.prepare_features
+    deps:
+      - src/features.py
+      - src/prepare_features.py
+      - data/processed/ratings_clean.csv
+    outs:
+      - models/rating_features.pkl

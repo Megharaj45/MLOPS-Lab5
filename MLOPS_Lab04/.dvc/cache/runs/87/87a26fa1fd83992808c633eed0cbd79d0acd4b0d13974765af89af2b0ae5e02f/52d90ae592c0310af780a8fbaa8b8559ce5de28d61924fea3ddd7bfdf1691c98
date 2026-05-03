@@ -1,0 +1,19 @@
+cmd: python -m src.prepare_features
+deps:
+- path: data/processed/ratings_clean.csv
+  hash: md5
+  md5: 04517ca5cf2dbfb7b8da3f0d710eb96a
+  size: 73431
+- path: src/features.py
+  hash: md5
+  md5: 68cf0001bf9d513656df45edfe2c00c3
+  size: 1417
+- path: src/prepare_features.py
+  hash: md5
+  md5: 77a9a41c6a673dd52e52f1104e7a448d
+  size: 403
+outs:
+- path: models/rating_features.pkl
+  hash: md5
+  md5: 1e5a2d3c2e8e0114c1b75e9415710e43
+  size: 479371
